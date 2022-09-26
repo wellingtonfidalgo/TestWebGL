@@ -22,7 +22,7 @@ public class TestDevice : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    { 
+    {
 
         //if (SystemInfo.deviceType == DeviceType.Desktop)
         //{
@@ -32,7 +32,7 @@ public class TestDevice : MonoBehaviour
         //    mobile.SetActive(false);
         //    unknow.SetActive(false);
         //}
-        
+
         //if(SystemInfo.deviceType == DeviceType.Handheld)
         //{
         //    Debug.Log("Método 1");
@@ -41,23 +41,23 @@ public class TestDevice : MonoBehaviour
         //    mobile.SetActive(true);
         //    unknow.SetActive(false);
         //}
-        
-        //if (Application.isMobilePlatform)
-        //{
-        //    Debug.Log("Método 2");
 
-        //    desktop.SetActive(false);
-        //    mobile.SetActive(true);
-        //    unknow.SetActive(false);
-        //}
-        
-        if (isMobile())
+        if (Application.isMobilePlatform)
         {
-            Debug.Log("Método 3");
+            Debug.Log("Método 2");
 
             desktop.SetActive(false);
             mobile.SetActive(true);
             unknow.SetActive(false);
         }
+
+        //if (isMobile())
+        //{
+        //    Debug.Log("Método 3");
+
+        //    desktop.SetActive(false);
+        //    mobile.SetActive(true);
+        //    unknow.SetActive(false);
+        //}
     }
 }
