@@ -43,6 +43,13 @@ public class TestDevice : MonoBehaviour
             desktop.SetActive(false);
             mobile.SetActive(true);
             unknow.SetActive(false);
+        }else if (IsMobile())
+        {
+            Debug.Log("Método 3");
+
+            desktop.SetActive(false);
+            mobile.SetActive(true);
+            unknow.SetActive(false);
         }
         else
         {
