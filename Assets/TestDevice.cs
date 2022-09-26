@@ -26,6 +26,8 @@ public class TestDevice : MonoBehaviour
 
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
+            Debug.log("Desktop Device");
+
             desktop.SetActive(true);
             mobile.SetActive(false);
             unknow.SetActive(false);
