@@ -24,40 +24,40 @@ public class TestDevice : MonoBehaviour
     void Start()
     { 
 
-        if (SystemInfo.deviceType == DeviceType.Desktop)
-        {
-            Debug.log("Desktop Device");
+        //if (SystemInfo.deviceType == DeviceType.Desktop)
+        //{
+        //    Debug.Log("Desktop Device");
 
-            desktop.SetActive(true);
-            mobile.SetActive(false);
-            unknow.SetActive(false);
-        }else if(SystemInfo.deviceType == DeviceType.Handheld)
-        {
-            Debug.Log("Método 1");
+        //    desktop.SetActive(true);
+        //    mobile.SetActive(false);
+        //    unknow.SetActive(false);
+        //}
+        
+        //if(SystemInfo.deviceType == DeviceType.Handheld)
+        //{
+        //    Debug.Log("Método 1");
 
-            desktop.SetActive(false);
-            mobile.SetActive(true);
-            unknow.SetActive(false);
-        }else if (Application.isMobilePlatform)
-        {
-            Debug.Log("Método 2");
+        //    desktop.SetActive(false);
+        //    mobile.SetActive(true);
+        //    unknow.SetActive(false);
+        //}
+        
+        //if (Application.isMobilePlatform)
+        //{
+        //    Debug.Log("Método 2");
 
-            desktop.SetActive(false);
-            mobile.SetActive(true);
-            unknow.SetActive(false);
-        }else if (IsMobile())
+        //    desktop.SetActive(false);
+        //    mobile.SetActive(true);
+        //    unknow.SetActive(false);
+        //}
+        
+        if (isMobile())
         {
             Debug.Log("Método 3");
 
             desktop.SetActive(false);
             mobile.SetActive(true);
             unknow.SetActive(false);
-        }
-        else
-        {
-            desktop.SetActive(false);
-            mobile.SetActive(false);
-            unknow.SetActive(true);
         }
     }
 }
